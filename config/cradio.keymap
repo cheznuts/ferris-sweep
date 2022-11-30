@@ -13,7 +13,6 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define STENO   3
 
 / {         
      behaviors {
@@ -21,7 +20,7 @@
                   compatible = "zmk,behavior-hold-tap";
                   label = "HOMEROW_MODS";
                   #binding-cells = <2>;
-                  tapping-term-ms = <200>;
+                  tapping-term-ms = <300>;
                   quick-tap-ms = <125>;
                   flavor = "tap-preferred";
                   bindings = <&kp>, <&kp>;
@@ -38,28 +37,28 @@
                 
        		default_layer {
 		bindings = <
-		&kp Q       &kp W &kp F &kp P      &kp B 	       &kp J          &kp L &kp U     &kp Y   &kp APOS 
-		&mt LSHFT A &kp R &kp S &kp T      &kp G 	       &kp M          &kp N &kp E     &kp I   &mt RSHFT O
-		&kp Z       &kp X &kp C &kp D      &kp V	       &kp K          &kp H &kp COMMA &kp DOT &kp FSLH
-          				&lt 1 BSPC &mt LCTL MINUS      &mt LCTRL CAPS &lt 1 SPACE 
+		&kp Q      &kp W &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y   &kp APOS 
+		&mt A      &kp R &hm LCTRL S &hm LSHFT T &kp G 	         &kp M       &hm RSHFT N &hm RCTRL E &kp I   &kp O
+		&hm LGUI Z &kp X &kp C       &kp D       &kp V	         &kp K       &kp H       &kp COMMA   &kp DOT &kp FSLH
+          		                     &kp MINUS   &lt 1 BSPC      &lt 1 SPACE &kp SEMI 
 		>;
 		};
 
-       		left_layer {
+       		lower_layer {
 		bindings = <
-		&kp N1    &kp N2    &kp N3  &kp N4   &kp N5	    &kp N6    &kp N7   &kp N8   &kp N9   &kp N0 
-		&kp TAB   &kp LCTRL &kp DEL &kp LALT &kp MINUS      &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &lt 2 SEMI 
-		&kp LSHFT &trans    &trans  &trans   &kp ESC 	    &kp RET   &trans   &trans   &trans   &trans 
-					    &kp BSPC &kp LSHFT      &kp RSHFT &kp SPACE
+		&kp PIPE &kp BSLH &kp LPAR  &kp RPAR  &kp DEL	    &kp MINUS &kp N7 &kp N8 &kp N9 &kp PLUS 
+		&kp LALT &kp TAB  &kp LCTRL &kp LSHFT &kp RET       &kp COMMA &kp N4 &kp N5 &kp N6 &lt 2 DOT 
+		&kp LBRC &kp RBRC &kp LBKT  &kp RBKT  &kp ESC 	    &kp FSLH  &kp N1 &kp N2 &kp N3 &kp EQUAL 
+					    &kp CAPS  &kp BSPC      &kp SPACE &kp N0
 		>;
 		};
 		
-		right_layer {
+		raise_layer {
 		bindings = <
-		&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &trans &trans   &kp UP   &trans    &trans 
-		&trans     &kp LCTRL    &trans       &trans       &trans 	    &trans &kp LEFT &kp DOWN &kp RIGHT &trans
-		&kp LSFT   &trans       &trans       &trans       &trans    	    &trans &trans   &trans   &trans    &trans
-                                                     &kp BSPC     &trans            &trans &kp SPACE
+		&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp DEL       &none     &none    &kp UP   &none     &none 
+		&kp LALT   &kp TAB      &kp LCTRL    &kp LSHFT    &kp RET       &none     &kp LEFT &kp DOWN &kp RIGHT &trans
+		&none      &none        &none        &none        &kp ESC       &none     &none    &none    &none     &none
+                                                     &none        &kp BSPC      &kp SPACE &none
 		>;
 		};	
 		
