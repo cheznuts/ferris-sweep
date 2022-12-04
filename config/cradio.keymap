@@ -32,33 +32,33 @@
     };
     
 / {
-        keymap {
-                compatible = "zmk,keymap";
+   keymap {
+           compatible = "zmk,keymap";
                 
-       		default_layer {
-		bindings = <
-		&kp Q       &kp W &kp F &kp P     &kp B           &kp J       &kp L          &kp U     &kp Y   &kp APOS 
-		&kp A       &kp R &kp S &kp T     &kp G           &kp M       &kp N          &kp E     &kp I   &kp O
-		&mt LSHFT Z &kp X &kp C &kp D     &kp V	          &kp K       &kp H          &kp COMMA &kp DOT &mt RSHFT FSLH
-          		                &kp MINUS &lt 1 BSPC      &lt 1 SPACE &mt LCTRL SEMI 
+       	default_layer {
+	bindings = <
+	&kp Q       &kp W       &kp F &kp P &kp B         &kp J &kp L &kp U     &kp Y         &kp APOS 
+	&kp A       &kp R       &kp S &kp T &kp G         &kp M &kp N &kp E     &kp I         &kp O
+	&hm LSHFT Z &hm LCTRL X &kp C &kp D &kp V         &kp K &kp H &kp COMMA &hm RCTRL DOT &hm RSHFT FSLH
+       		                &lt 1 MINUS &kp BSPC      &kp SPACE &lt 2 DEL 
 		>;
 		};
 
-       		lower_layer {
-		bindings = <
-		&kp PIPE  &kp BSLH  &kp LPAR &kp RPAR &kp RET	    &kp MINUS &kp N7 &kp N8 &kp N9 &kp PLUS 
-		&kp LALT  &kp LBRC  &kp RBRC &kp LBKT &kp RBKT      &kp COMMA &kp N4 &kp N5 &kp N6 &lt 2 DOT 
-		&kp LSHFT &kp LCTRL &kp DEL  &kp TAB  &kp ESC 	    &kp FSLH  &kp N1 &kp N2 &kp N3 &kp EQUAL 
-					     &kp CAPS &kp BSPC      &kp SPACE &kp N0
+       	lower_layer {
+	bindings = <
+	&kp GRAVE &none  &none   &none    &kp MINUS      &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp SEMI
+	&kp N1    &kp N2 &kp N3  &kp N4   &kp N5         &kp N6    &kp N7   &kp N8   &kp N9   &kp N0 
+	&trans    &trans &kp DEL &kp LALT &kp ESC        &kp RET   &kp TAB  &trans   &trans   &trans 
+	                         &trans   &kp BSPC       &kp SPACE &lt 2 CAPS
 		>;
 		};
 		
-		raise_layer {
-		bindings = <
-		&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp RET       &none     &none    &kp UP   &none     &none 
-		&none      &none        &none        &none        &none         &none     &kp LEFT &kp DOWN &kp RIGHT &trans
-		&kp LSHFT  &kp LCTRL    &kp DEL      &kp TAB      &kp ESC       &none     &none    &none    &none     &none
-                                                     &none        &kp BSPC      &kp SPACE &none
+	raise_layer {
+	bindings = <
+	&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp RET      &none  &none    &kp UP   &none     &none 
+	&none      &none        &none        &none        &none        &none  &kp LEFT &kp DOWN &kp RIGHT &none
+	&trans     &trans       &trans       &trans       &trans       &none  &none    &none    &none     &none
+                                             &none        &kp BSPC     &kp SPACE &trans
 		>;
 		};	
 		
