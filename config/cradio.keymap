@@ -40,16 +40,16 @@
 	&kp Q       &kp W       &kp F &kp P &kp B         &kp J &kp L &kp U     &kp Y         &kp APOS 
 	&kp A       &kp R       &kp S &kp T &kp G         &kp M &kp N &kp E     &kp I         &kp O
 	&hm LSHFT Z &hm LCTRL X &kp C &kp D &kp V         &kp K &kp H &kp COMMA &hm RCTRL DOT &hm RSHFT FSLH
-       		                &lt 1 MINUS &kp BSPC      &kp SPACE &lt 2 DEL 
+       		                &lt 1 MINUS &kp BSPC      &kp SPACE &lt 2 SEMI 
 		>;
 		};
 
        	lower_layer {
 	bindings = <
-	&kp GRAVE &none  &none   &none    &kp MINUS      &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp SEMI
-	&kp N1    &kp N2 &kp N3  &kp N4   &kp N5         &kp N6    &kp N7   &kp N8   &kp N9   &kp N0 
-	&trans    &trans &kp DEL &kp LALT &kp ESC        &kp RET   &kp TAB  &trans   &trans   &trans 
-	                         &trans   &kp BSPC       &kp SPACE &lt 2 CAPS
+	&kp GRAVE &none  &none    &none    &kp MINUS      &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp CAPS
+	&kp N1    &kp N2 &kp N3   &kp N4   &kp N5         &kp N6    &kp N7   &kp N8   &kp N9   &kp N0 
+	&trans    &trans &kp LALT &kp TAB  &kp ESC        &kp RET   &kp DEL  &trans   &trans   &trans 
+	                          &trans   &kp BSPC       &kp SPACE &kp BSPC
 		>;
 		};
 		
