@@ -47,19 +47,19 @@
 
        	num_layer {
 	bindings = <
-	&kp GRAVE &kp LBKT &kp RBKT &kp BSPC  &kp_NUMLOCK    &kp_DIVIDE   &kp_N7 &kp_N8 &kp_N9 &kp_MULTIPLY
-	&kp FSLH  &kp LT   &kp GT   &kp SPACE &kp RET        &kp_SUBTRACT &kp_N4 &kp_N5 &kp_N6 &kp_PLUS 
-	&trans    &trans   &kp LALT &kp TAB   &kp ESC        &kp_COMMA    &kp_N1 &kp_N2 &kp_N3 &kp_EQUAL 
-	                            &trans    &none          &kp_DOT      &kp_0
+	&kp GRAVE &kp LBKT &kp RBKT &kp BSPC  &none       &kp_DIVIDE   &kp_N7 &kp_N8 &kp_N9 &kp_MULTIPLY
+	&kp FSLH  &kp LT   &kp GT   &kp SPACE &kp RET     &kp_SUBTRACT &kp_N4 &kp_N5 &kp_N6 &kp_PLUS 
+	&trans    &trans   &kp LALT &kp TAB   &kp ESC     &kp_COMMA    &kp_N1 &kp_N2 &kp_N3 &kp_EQUAL 
+	                            &trans    &none       &kp_DOT      &kp_0
 		>;
 		};
 		
 	sym_layer {
 	bindings = <
-	&kp TILDE &kp LBRC &kp RBRC &kp BSPC  &kp_NUMLOCK    &kp PLUS  &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR 
-	&kp QMARK &kp LT   &kp GT   &kp SPACE &kp RET        &kp RET   &kp DLLR &kp PRCNT &kp CARET &trans
-	&trans    &trans   &kp LALT &kp TAB   &kp ESC        &kp DEL   &kp EXCL &kp AT    &kp POUND &trans
-                                    &none     &trans         &kp SPACE &kp RPAR
+	&kp TILDE &kp LBRC &kp RBRC &kp BSPC  &none       &kp PLUS  &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR 
+	&kp QMARK &kp LT   &kp GT   &kp SPACE &kp RET     &kp RET   &kp DLLR &kp PRCNT &kp CARET &trans
+	&trans    &trans   &kp LALT &kp TAB   &kp ESC     &kp DEL   &kp EXCL &kp AT    &kp POUND &trans
+                                    &none     &trans      &kp SPACE &kp RPAR
 		>;
 		};
 		
