@@ -11,8 +11,9 @@
 
 
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
+#define NUM     1
+#define SYM     2
+#define NAV     3
 
 / {         
      behaviors {
@@ -37,28 +38,37 @@
                 
        	default_layer {
 	bindings = <
-	&kp Q       &kp W       &kp F &kp P &kp B         &kp J &kp L &kp U     &kp Y         &kp APOS 
-	&kp A       &kp R       &kp S &kp T &kp G         &kp M &kp N &kp E     &kp I         &kp O
-	&hm LSHFT Z &hm LCTRL X &kp C &kp D &kp V         &kp K &kp H &kp COMMA &hm RCTRL DOT &hm RSHFT FSLH
-       		                &lt 1 MINUS &kp BSPC      &kp SPACE &lt 2 SEMI 
+	&kp Q       &kp W       &kp F &kp P &kp B     &kp J &kp L &kp U     &kp Y         &kp APOS 
+	&kp A       &kp R       &kp S &kp T &kp G     &kp M &kp N &kp E     &kp I         &kp O
+	&hm LSHFT Z &hm LCTRL X &kp C &kp D &kp V     &kp K &kp H &kp COMMA &hm RCTRL DOT &hm RSHFT FSLH
+       		          &lt 1 BSPC  &lt 2 MINUS     &kp SEMI &lt 3 SPACE 
 		>;
 		};
 
-       	lower_layer {
+       	num_layer {
 	bindings = <
-	&kp GRAVE &none  &none    &none    &kp MINUS      &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp CAPS
-	&kp N1    &kp N2 &kp N3   &kp N4   &kp N5         &kp N6    &kp N7   &kp N8   &kp N9   &kp N0 
-	&trans    &trans &kp LALT &kp TAB  &kp ESC        &kp RET   &kp DEL  &trans   &trans   &trans 
-	                          &trans   &kp BSPC       &kp SPACE &kp BSPC
+	&kp GRAVE &kp LBKT &kp RBKT &kp BSPC  &kp_NUM     &kp_DIVIDE   &kp_N7 &kp_N8 &kp_N9 &kp_MULTIPLY
+	&kp LSLH  &kp LT   &kp GT   &kp SPACE &kp RET     &kp_SUBTRACT &kp_N4 &kp_N5 &kp_N6 &kp_PLUS 
+	&trans    &trans   &kp LALT &kp TAB   &kp ESC     &kp_COMMA    &kp_N1 &kp_N2 &kp_N3 &kp_EQUAL 
+	                            &trans    &none       &kp_DOT      &kp_0
 		>;
 		};
 		
-	raise_layer {
+	sym_layer {
 	bindings = <
-	&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp RET      &none  &none    &kp UP   &none     &none 
-	&none      &none        &none        &none        &none        &none  &kp LEFT &kp DOWN &kp RIGHT &none
-	&trans     &trans       &trans       &trans       &trans       &none  &none    &none    &none     &none
-                                             &none        &kp BSPC     &kp SPACE &trans
+	&kp TILDE &kp LBRC &kp RBRC &kp BSPC  &kp_NUM     &kp PLUS  &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR 
+	&kp QMARK &kp LT   &kp GT   &kp SPACE &kp RET     &kp RET   &kp DLLR &kp PRCNT &kp CARAT &trans
+	&trans    &trans   &kp LALT &kp TAB   &kp ESC     &kp DEL   &kp EXCL &kp AT    &kp POUND &trans
+                                    &none     &trans      &kp SPACE &kp RPAR
+		>;
+		};
+		
+	nav_layer {
+	bindings = <
+	&bt BT_SEL 0 &bt BT_SEL 1 &none    &none    &none         &none   &none    &kp UP   &none     &none 
+	&bt BT_CLR   &bt BT_SEL 2 &none    &none    &kp RET       &none   &kp LEFT &kp DOWN &kp RIGHT &none
+	&trans       &trans       &kp LALT &kp TAB  &kp ESC       &kp DEL &none    &trans   &trans    &trans
+                                           &kp BSPC &kp SPACE     &none   &trans
 		>;
 		};	
 		
