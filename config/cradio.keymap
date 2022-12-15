@@ -21,8 +21,8 @@
                   compatible = "zmk,behavior-hold-tap";
                   label = "HOMEROW_MODS";
                   #binding-cells = <2>;
-                  tapping-term-ms = <150>;
-                  quick-tap-ms = <100>;
+                  tapping-term-ms = <200>;
+                  quick-tap-ms = <125>;
                   flavor = "tap-preferred";
                   bindings = <&kp>, <&kp>;
         };
@@ -68,7 +68,7 @@
 	&bt BT_SEL 0 &bt BT_SEL 1 &none    &kp TILDE &none        &none   &none    &kp UP   &none     &none 
 	&bt BT_CLR   &bt BT_SEL 2 &none    &kp GRAVE &kp RET      &none   &kp LEFT &kp DOWN &kp RIGHT &none
 	&trans       &trans       &kp LALT &kp TAB   &kp ESC      &kp DEL &none    &trans   &trans    &trans
-                                           &kp SPACE &kp BSPC     &none   &trans
+                                           &kp SPACE &kp BSPC     &bootloader &trans
 		>;
 		};	
 		
