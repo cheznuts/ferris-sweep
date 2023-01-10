@@ -21,8 +21,8 @@
                   compatible = "zmk,behavior-hold-tap";
                   label = "HOMEROW_MODS";
                   #binding-cells = <2>;
-                  tapping-term-ms = <170>;
-                  quick-tap-ms = <125>;
+                  tapping-term-ms = <200>;
+                  quick-tap-ms = <150>;
                   flavor = "tap-preferred";
                   bindings = <&kp>, <&kp>;
         };
@@ -38,37 +38,37 @@
                 
        	default_layer {
 	bindings = <
-	&kp Q       &kp W       &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O         &kp P 
-	&kp A       &kp S       &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L         &kp APOS
-	&hm LSHFT Z &hm LCTRL X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &hm RCTRL DOT &hm RSHFT FSLH
-       		           &lt 2 MINUS &lt 1 BSPC     &kp SPACE &lt 3 SEMI 
+	&kp Q       &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P 
+	&kp A       &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp APOS
+	&hm LSHFT Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &hm RSHFT FSLH
+       		     &lt 2 MINUS &lt 1 BSPC     &hm RCTRL SPACE &lt 3 SEMI 
 		>;
 		};
 
        	num_layer {
 	bindings = <
-	&kp KP_NUM &kp BSLH &kp LT   &kp GT   &kp DEL     &kp FSLH  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp ASTRK
-	&kp FSLH   &none    &kp LBKT &kp RBKT &kp RET     &kp MINUS &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp PLUS 
-	&trans     &trans   &kp LALT &kp TAB  &kp ESC     &kp EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp COMMA 
-	                             &none    &trans      &kp KP_N0 &kp DOT 
+	&kp KP_NUM &kp BSLH  &kp LT   &kp GT   &kp DEL     &kp FSLH  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp ASTRK
+	&kp CAPS   &none     &kp LBKT &kp RBKT &kp RET     &kp MINUS &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp PLUS 
+	&kp LSHFT  &kp LCTRL &kp LALT &kp TAB  &kp ESC     &kp EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp COMMA 
+	                              &none    &trans      &kp KP_N0 &kp DOT 
 		>; 
 		};
 		
 	sym_layer {
 	bindings = <
-	&kp KP_NUM &kp PIPE &kp LT   &kp GT   &kp DEL     &kp PLUS  &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR 
-	&kp QMARK  &none    &kp LBRC &kp RBRC &kp RET     &kp MINUS &kp DLLR &kp PRCNT &kp CARET &trans
-	&trans     &trans   &kp LALT &kp TAB  &kp ESC     &kp DEL   &kp EXCL &kp AT    &kp POUND &trans
-                                    &trans    &trans      &kp SPACE &kp BSPC
+	&kp KP_NUM &kp PIPE  &kp LT   &kp GT   &kp DEL     &kp FSLH  &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR 
+	&kp CAPS   &none     &kp LBRC &kp RBRC &kp RET     &kp MINUS &kp DLLR &kp PRCNT &kp CARET &kp PLUS
+	&kp LSHFT  &kp LCTRL &kp LALT &kp TAB  &kp ESC     &kp EQUAL &kp EXCL &kp AT    &kp POUND &kp COMMA
+                                     &trans    &trans      &kp SPACE &kp BSPC
 		>;
 		};
 		
 	nav_layer {
 	bindings = <
-	&bt BT_SEL 0 &bt BT_SEL 1 &none    &kp TILDE &bootloader    &none   &none    &kp UP   &none     &to 4 
-	&bt BT_CLR   &bt BT_SEL 2 &none    &kp GRAVE &kp RET        &none   &kp LEFT &kp DOWN &kp RIGHT &none
-	&trans       &trans       &kp LALT &kp TAB   &kp ESC        &kp DEL &none    &trans   &trans    &trans
-                                           &kp SPACE &kp BSPC       &bootloader &trans
+	&bt BT_SEL 0 &bt BT_SEL 1 &bootloader &kp TILDE &kp DEL      &none  &kp HOME &kp UP   &kp END   &none 
+	&bt BT_CLR   &bt BT_SEL 2 &none       &kp GRAVE &kp RET      &none  &kp LEFT &kp DOWN &kp RIGHT &none
+	&kp LSHFT    &kp LCTRL    &kp LALT    &kp TAB   &kp ESC      &none  &none    &trans   &trans    &trans
+                                              &kp SPACE &kp BSPC     &trans &trans
 		>;
 		};	
 		
