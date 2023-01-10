@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    tapping_term_ms = <300>;
-};
-
 
 
 #define DEFAULT 0
@@ -45,7 +41,7 @@
 	&kp Q       &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O   &kp P 
 	&kp A       &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L   &kp APOS
 	&hm LSHFT Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &hm RSHFT FSLH
-       		     &lt 2 MINUS &lt 1 BSPC     &mt LCTRL SPACE &lt 3 SEMI 
+       		     &lt 2 MINUS &lt 1 BSPC     &kp SPACE &lt 3 SEMI 
 		>;
 		};
 
@@ -70,8 +66,8 @@
 	nav_layer {
 	bindings = <
 	&bt BT_SEL 0 &bt BT_SEL 1 &bootloader &kp TILDE &kp DEL      &none  &kp HOME &kp UP   &kp END   &none 
-	&bt BT_CLR   &bt BT_SEL 2 &none       &kp GRAVE &kp RET      &none  &kp LEFT &kp DOWN &kp RIGHT &none
-	&kp LSHFT    &kp LCTRL    &kp LALT    &kp TAB   &kp ESC      &none  &none    &trans   &trans    &trans
+	&bt BT_CLR   &bt BT_SEL 2 &none       &kp GRAVE &kp RET      &none  &kp LEFT &kp DOWN &kp RIGHT &kp RCTRL
+	&kp LSHFT    &kp LCTRL    &kp LALT    &kp TAB   &kp ESC      &none  &none    &none    &kp RCTRL &kp RSHFT
                                               &kp SPACE &kp BSPC     &trans &trans
 		>;
 		};	
