@@ -38,7 +38,7 @@
                 
        	default_layer {
 	bindings = <
-	&kp Q       &kp W &kp F &kp P &kp B     &kp J &kp L &kp u     &kp Y   &kp APOS 
+	&kp Q       &kp W &kp F &kp P &kp B     &kp J &kp L &kp U     &kp Y   &kp APOS 
 	&kp A       &kp R &kp S &kp T &kp G     &kp M &kp N &kp E     &kp I   &kp O
 	&hm LSHFT Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA &kp DOT &hm RSHFT FSLH
        		     &lt 2 MINUS &lt 1 BSPC     &kp SPACE &lt 3 SEMI 
