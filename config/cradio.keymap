@@ -38,37 +38,37 @@
                 
        	default_layer {
 	bindings = <
-	&kp Q  &kp W       &kp F       &kp P        &kp B     &kp J  &kp L       &kp U        &kp Y       &kp APOS
-	&kp A  &hm LALT R  &hm LCTRL S &hm LSHFT T  &kp G     &kp M  &hm RSHFT N &hm RCTRL E  &hm RALT I  &kp O
-	&kp Z  &kp X       &kp C       &kp D        &kp V     &kp K  &kp H       &kp COMMA    &kp DOT     &kp FSLH
-       		                   &lt 2 MINUS &lt 1 BSPC     &kp SPACE &lt 3 SEMI 
+	&kp Q        &kp W  &kp F  &kp P  &kp B     &kp J  &kp  L  &kp U      &kp Y    &kp APOS
+	&kp A        &kp R  &kp S  &kp T  &kp G     &kp M  &kp  N  &kp E      &kp I    &kp O
+	&mt LSHFT Z  &kp X  &kp C  &kp D  &kp V     &kp K  &kp  H  &kp COMMA  &kp DOT  &mt RSHFT FSLH
+       		         &lt 2 MINUS &lt 1 BSPC     &kp SPACE &mt LCTRL SEMI 
 		>;
 		};
 
        	num_layer {
 	bindings = <
-	&kp EXCL &kp AT      &kp POUND    &kp DLLR     &kp PRCNT     &kp CARET &kp AMPS     &kp ASTRK    &kp LPAR    &kp RPAR
-	&kp N1   &hm LALT N2 &hm LCTRL N3 &hm LSHFT N4 &kp N5        &kp N6    &hm RSHFT N7 &hm RCTRL N8 &hm RALT N9 &kp N0 
-	&none    &none       &none        &kp GRAVE    &kp TILDE     &kp BSLH  &kp MINUS    &kp EQUAL    &kp LBKT    &kp RBKT
-	                                  &none        &none         &kp SPACE &kp BSPC 
+	&kp EXCL   &kp AT  &kp POUND  &kp DLLR   &kp PRCNT     &kp CARET &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
+	&kp N1     &kp N2  &kp N3     &kp N4     &kp N5        &kp N6    &kp N7     &kp N8     &kp N9    &kp N0 
+	&kp LSHFT  &none   &none      &kp GRAVE  &kp TILDE     &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT
+	                              &none      &trans        &kp SPACE &kp BSPC 
 		>; 
 		};
 		
 	sym_layer {
 	bindings = <
-	&none    &none    &none     &none     &none      &none     &none    &kp PG_UP  &none     &kp BSPC 
-	&kp LWIN &kp LALT &kp LCTRL &kp LSHFT &none      &kp LEFT  &kp DOWN &kp UP     &kp RIGHT &kp RET
-	&kp ESC  &kp TAB  &kp CAPS  &none     &none      &kp HOME  &kp END  &kp PG_DN  &kp LALT  &kp DEL
-                                &trans    &none      &kp SPACE &kp BSPC
+	&kp ESC    &none      &none     &none   &none      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
+	&kp TAB    &kp CAPS   &none     &none   &none      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
+	&kp LSHFT  &kp LCTRL  &kp LALT  &none   &none      &none     &none      &kp RALT   &kp RCTRL  &kp DEL
+                                    &trans  &lt 3      &kp SPACE &kp BSPC
 		>;
 		};
 		
 	nav_layer {
 	bindings = <
 	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &bootloader     &none  &none  &none  &none  &none 
-	&none        &none        &none        &none      &none              &none  &none  &none  &none  &none
-	&none        &none        &none        &none      &none              &none  &none  &none  &none  &none
-                                           &none      &none              &none  &trans
+	&none        &none        &none        &none      &none           &none  &none  &none  &none  &none
+	&none        &none        &none        &none      &none           &none  &none  &none  &none  &none
+                                           &trans     &trans          &none  &none
 		>;
 		};	
 		
