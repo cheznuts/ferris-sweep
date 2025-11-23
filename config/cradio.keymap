@@ -59,7 +59,7 @@
 	&kp ESC    &none      &none     &none   &none      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC 
 	&kp TAB    &kp CAPS   &none     &none   &none      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
 	&kp LSHFT  &kp LCTRL  &kp LALT  &none   &none      &none     &none      &kp RALT   &kp RCTRL  &kp DEL
-                                    &trans  &lt 3      &kp SPACE &kp BSPC
+                                    &trans  &mo 3      &kp SPACE &kp BSPC
 		>;
 		};
 		
